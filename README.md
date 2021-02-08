@@ -15,7 +15,7 @@ allows scoring candidate models of the brain on a range of assemblies and metric
 
 ## Quick setup
 
-Recommended for most users. Use Brain-Score as a library. You will need Python >= 3.6 and pip >= 18.1.
+Recommended for most users. Use Brain-Score as a library. You will need Python >= 3.7 and pip >= 18.1.
 
 `pip install git+https://github.com/brain-score/brain-score`
 
@@ -75,3 +75,6 @@ Use conda: `conda install netcdf4`
 results (scores, activations) are cached on disk using https://github.com/mschrimpf/result_caching.
 Delete the corresponding file or directory to clear the cache.
 </details>
+
+##CI environment
+Add CI related build commands to `test_setup.sh`. The script is executed in CI environment for unittests.

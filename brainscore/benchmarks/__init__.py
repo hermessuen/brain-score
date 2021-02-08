@@ -162,6 +162,8 @@ def _experimental_benchmark_pool():
     from .cadena2017 import ToliasCadena2017PLS, ToliasCadena2017Mask
     pool['tolias.Cadena2017-pls'] = LazyLoad(ToliasCadena2017PLS)
     pool['tolias.Cadena2017-mask'] = LazyLoad(ToliasCadena2017Mask)
+    from .kuzovkin2018 import AruKuzovkin2018PLS
+    pool['aru.Kuzovkin2018-pls'] = LazyLoad(AruKuzovkin2018PLS)
 
     return pool
 

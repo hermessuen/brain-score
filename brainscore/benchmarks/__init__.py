@@ -186,6 +186,9 @@ def _experimental_benchmark_pool():
     from .kuzovkin2018 import AruKuzovkin2018PLS
     pool['aru.Kuzovkin2018-pls'] = LazyLoad(AruKuzovkin2018PLS)
 
+    from .cichy2019 import AruCichy2019RDM
+    pool['aru.Cichy2019-rdm'] = LazyLoad(AruCichy2019RDM)
+
     from .sanghavi2020 import DicarloSanghavi2020V4PLS, DicarloSanghavi2020ITPLS
     pool['dicarlo.Sanghavi2020.V4-pls'] = LazyLoad(DicarloSanghavi2020V4PLS)
     pool['dicarlo.Sanghavi2020.IT-pls'] = LazyLoad(DicarloSanghavi2020ITPLS)

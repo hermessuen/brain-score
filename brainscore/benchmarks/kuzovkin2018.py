@@ -51,7 +51,7 @@ it_right_b_z = [-20, -16]
 # def get_IT_MNI():
 #     it_left_a_idx = list(np.where((mni[:, 0] >= it_left_a_x[0]) & (mni[:, 0] <= it_left_a_x[1]) &
 #                                   (mni[:, 1] >= it_left_a_y[0]) & (mni[:, 1] <= it_left_a_y[1]) & (mni[:, 2] >= it_left_a_z[0]) & (mni[:, 2] <= it_left_a_z[1]))[0])
-# 
+#
 #
 #     it_left_b_idx = list(np.where((mni[:, 0] >= -19) & (mni[:, 0] <= -13) & (mni[:, 1] >=  -8) & (mni[:, 1] <=  3) & (mni[:, 2] >= -19) & (mni[:, 2] <= -15))[0])
 #

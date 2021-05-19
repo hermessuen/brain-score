@@ -66,13 +66,13 @@ def AruKuzovkin2018PLS():
     assembly_repetition = LazyLoad(lambda: load_assembly(average_repetitions=False))
     assembly = LazyLoad(lambda: load_assembly(average_repetitions=True))
 
-    # similarity_metric = CrossRegressedCorrelation(
-    #     regression=pls_regression(),
-    #     correlation=pearsonr_correlation(),
-    #     crossvalidation_kwargs=dict(stratification_coord=None)
-    # )
+    similarity_metric = CrossRegressedCorrelation(
+        regression=pls_regression(),
+        correlation=pearsonr_correlation(),
+        crossvalidation_kwargs=dict(stratification_coord=None)
+    )
 
-    similarity_metric = RDMCrossValidated(crossvalidation_kwargs=dict(stratification_coord=None))
+    #similarity_metric = RDMCrossValidated(crossvalidation_kwargs=dict(stratification_coord=None))
 
     # sub-select the entire IT region
     # x = assembly['region']

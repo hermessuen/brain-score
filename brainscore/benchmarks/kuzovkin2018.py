@@ -72,6 +72,8 @@ def AruKuzovkin2018PLS():
         crossvalidation_kwargs=dict(stratification_coord=None)
     )
 
+
+    # some change
     #similarity_metric = RDMCrossValidated(crossvalidation_kwargs=dict(stratification_coord=None))
 
     # sub-select the entire IT region

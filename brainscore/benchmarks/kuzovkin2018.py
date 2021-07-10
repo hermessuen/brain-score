@@ -88,7 +88,8 @@ def AruKuzovkin2018PLS():
 
     new_assembly = assembly[:, idx, :]
 
-    new_assembly = type(new_assembly)(new_assembly.values, coords={coord: (dims, values if coord != 'region' else ['IT'] * len(new_assembly['region'])) for
+    # Can replace the "name" of the brain region
+    new_assembly = type(new_assembly)(new_assembly.values, coords={coord: (dims, values if coord != 'region' else ['V1'] * len(new_assembly['region'])) for
                                    coord, dims, values in walk_coords(new_assembly)}, dims=new_assembly.dims)
 
 
